@@ -1,0 +1,1316 @@
+fileFormatVersion: 2
+guid: c2a531a0ef5e08e4db0ef8b1bd45f5f6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2164588076753921552
+    second: Sword_In_Stone_0
+  - first:
+      213: 2468153937184432823
+    second: Sword_In_Stone_1
+  - first:
+      213: 8652203574955736742
+    second: Sword_In_Stone_2
+  - first:
+      213: -1018915000617332162
+    second: Sword_In_Stone_3
+  - first:
+      213: 8905506565504706374
+    second: Sword_In_Stone_4
+  - first:
+      213: 7750929845957514802
+    second: Sword_In_Stone_5
+  - first:
+      213: 7535659098443595812
+    second: Sword_In_Stone_6
+  - first:
+      213: 1567942046173516524
+    second: Sword_In_Stone_7
+  - first:
+      213: 387986273655345996
+    second: Sword_In_Stone_8
+  - first:
+      213: 5600541867371882384
+    second: Sword_In_Stone_9
+  - first:
+      213: -818297036089841604
+    second: Sword_In_Stone_10
+  - first:
+      213: 151902040217690863
+    second: Sword_In_Stone_11
+  - first:
+      213: -4605913943029012830
+    second: Sword_In_Stone_12
+  - first:
+      213: 5275849954381252589
+    second: Sword_In_Stone_13
+  - first:
+      213: 5868675673004671864
+    second: Sword_In_Stone_14
+  - first:
+      213: 5804076728396296792
+    second: Sword_In_Stone_15
+  - first:
+      213: -1921679045226868415
+    second: Sword_In_Stone_16
+  - first:
+      213: -6334176736899418070
+    second: Sword_In_Stone_17
+  - first:
+      213: 5520368842406821214
+    second: Sword_In_Stone_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sword_In_Stone_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 708
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016a6f723692a0e10800000000000000
+      internalID: 2164588076753921552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 708
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b22cd4dde4a04220800000000000000
+      internalID: 2468153937184432823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 708
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aef9916f4dc21870800000000000000
+      internalID: 8652203574955736742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 708
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3213e394361cd1f0800000000000000
+      internalID: -1018915000617332162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 708
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64721d5b907b69b70800000000000000
+      internalID: 8905506565504706374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 708
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2365543f0a5d09b60800000000000000
+      internalID: 7750929845957514802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_6
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 708
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420cb2f360a049860800000000000000
+      internalID: 7535659098443595812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 590
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce25292dbf272c510800000000000000
+      internalID: 1567942046173516524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_8
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 590
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4354f2d577626500800000000000000
+      internalID: 387986273655345996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_9
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 590
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097676ac72f19bd40800000000000000
+      internalID: 5600541867371882384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_10
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 590
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c382c136e23d4a4f0800000000000000
+      internalID: -818297036089841604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 590
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe225dbc91aab1200800000000000000
+      internalID: 151902040217690863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_12
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 590
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6acb70ca18410c0800000000000000
+      internalID: -4605913943029012830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_13
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 590
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de7c723b495973940800000000000000
+      internalID: 5275849954381252589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 472
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8738b675e69b17150800000000000000
+      internalID: 5868675673004671864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_15
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 472
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8523c2d78093c8050800000000000000
+      internalID: 5804076728396296792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_16
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 472
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141d0f00713d455e0800000000000000
+      internalID: -1921679045226868415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_17
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 472
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28319451db7818a0800000000000000
+      internalID: -6334176736899418070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_18
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 472
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5dfac8c63a4c9c40800000000000000
+      internalID: 5520368842406821214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_19
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 472
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6eefbff127beb42a3afb8677994f75
+      internalID: 548908756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_20
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 472
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acba5f7d827ab42448968e9cb3a49d7b
+      internalID: -199454571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 354
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a5281b98b1b8341a069625e3eb6cdd
+      internalID: 626312968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_22
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 354
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f7189baff47e5438ed92511c209736
+      internalID: 1410903502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_23
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 354
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9194a86926b4fb5459440227c37cd5a8
+      internalID: 1508347818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_24
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 354
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0cade4c5d11a994b97e21060dded0d9
+      internalID: -264094532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_25
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 354
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7bf9edbccd078f4088e8052ebf2cf16
+      internalID: 1541269731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_26
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 354
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d436cdbade41a04c9b7a3e7d127e1bc
+      internalID: 98942348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_27
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 354
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085225a9bb7c5d54f90f5ebee9372df1
+      internalID: 886888958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 236
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17186aa2e1c6c2241abd2aa671b83bb9
+      internalID: 2002769593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_29
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 236
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97fc6de1bc7ee842b4b4304e624dcfd
+      internalID: 639349510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_30
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 236
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c94d7379bf45fb46812c7cd37a55eee
+      internalID: -154876820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_31
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 236
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f89747d3f8f39a418729500e3b7dc1a
+      internalID: -440021360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_32
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 236
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fe8a7e8eb1d0a4cba16761b6b9f7c8
+      internalID: 1031332883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_33
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 236
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7805fe78cc522ca48b7ff2e974f02681
+      internalID: 1546418096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_34
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 236
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9dd9c4c1301004d97aa54efef89041
+      internalID: -294776003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 118
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d07fda2d8eba0047b92bacb0615c4d9
+      internalID: 1290656096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_36
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 118
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53ca8c864969b5428c50d8f57a1f172
+      internalID: 1732668527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_37
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 118
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e233755206a0a684ebe49189c6f5ef1d
+      internalID: -584983956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_38
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 118
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b6b11414d81974485e41584b15bcc0
+      internalID: -28230310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_39
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 118
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb6dfc567f439b429f835ad313c58e7
+      internalID: -221076869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_40
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 118
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f861b9bcacfce84bbc23348de13af86
+      internalID: -945433445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_41
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 118
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42c4ec77f63b174eb85c1823ad7cffd
+      internalID: -730762144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f61b4666c6e32b47b2d67266cf6848a
+      internalID: 159981167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_43
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cc9b0b3527d9f40926eeac1bf9ef8f
+      internalID: 1091571974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_44
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79434e9fa70861c41bb5e4cc09bc5a0d
+      internalID: 734873516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_45
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614b0dad12830b6449ad21058be8f3f5
+      internalID: -800670781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_46
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a182e47d1ed83e498b8f5303a341b01
+      internalID: 1700469531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_47
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721df732cdef497409f0a971d55053db
+      internalID: -1196234062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_In_Stone_48
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 0
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b679a227808512849b0f4cea6cdb634f
+      internalID: 2065355356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 85151c7d1be3ba34a826f27484ccf2fe
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":7.0},"gridSpriteSize":{"x":53.0,"y":118.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Sword_In_Stone_0: 2164588076753921552
+      Sword_In_Stone_1: 2468153937184432823
+      Sword_In_Stone_10: -818297036089841604
+      Sword_In_Stone_11: 151902040217690863
+      Sword_In_Stone_12: -4605913943029012830
+      Sword_In_Stone_13: 5275849954381252589
+      Sword_In_Stone_14: 5868675673004671864
+      Sword_In_Stone_15: 5804076728396296792
+      Sword_In_Stone_16: -1921679045226868415
+      Sword_In_Stone_17: -6334176736899418070
+      Sword_In_Stone_18: 5520368842406821214
+      Sword_In_Stone_19: 548908756
+      Sword_In_Stone_2: 8652203574955736742
+      Sword_In_Stone_20: -199454571
+      Sword_In_Stone_21: 626312968
+      Sword_In_Stone_22: 1410903502
+      Sword_In_Stone_23: 1508347818
+      Sword_In_Stone_24: -264094532
+      Sword_In_Stone_25: 1541269731
+      Sword_In_Stone_26: 98942348
+      Sword_In_Stone_27: 886888958
+      Sword_In_Stone_28: 2002769593
+      Sword_In_Stone_29: 639349510
+      Sword_In_Stone_3: -1018915000617332162
+      Sword_In_Stone_30: -154876820
+      Sword_In_Stone_31: -440021360
+      Sword_In_Stone_32: 1031332883
+      Sword_In_Stone_33: 1546418096
+      Sword_In_Stone_34: -294776003
+      Sword_In_Stone_35: 1290656096
+      Sword_In_Stone_36: 1732668527
+      Sword_In_Stone_37: -584983956
+      Sword_In_Stone_38: -28230310
+      Sword_In_Stone_39: -221076869
+      Sword_In_Stone_4: 8905506565504706374
+      Sword_In_Stone_40: -945433445
+      Sword_In_Stone_41: -730762144
+      Sword_In_Stone_42: 159981167
+      Sword_In_Stone_43: 1091571974
+      Sword_In_Stone_44: 734873516
+      Sword_In_Stone_45: -800670781
+      Sword_In_Stone_46: 1700469531
+      Sword_In_Stone_47: -1196234062
+      Sword_In_Stone_48: 2065355356
+      Sword_In_Stone_5: 7750929845957514802
+      Sword_In_Stone_6: 7535659098443595812
+      Sword_In_Stone_7: 1567942046173516524
+      Sword_In_Stone_8: 387986273655345996
+      Sword_In_Stone_9: 5600541867371882384
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
