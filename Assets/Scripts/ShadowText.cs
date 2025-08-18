@@ -8,7 +8,7 @@ public class ShadowText : MonoBehaviour
     
     public void SetText(string text)
     {
-        foreach (var textComponent in texts)
+        foreach (TextMeshProUGUI textComponent in texts)
         {
             textComponent.text = text;
         }
