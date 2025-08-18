@@ -101,8 +101,7 @@ public class GameController : MonoBehaviour
     System.Collections.IEnumerator WaitForFailAnim()
     {
         // Wait for fail animation to finish
-        float animLength = swordAnim.GetCurrentAnimatorStateInfo(0).length;
-        yield return new WaitForSeconds(animLength);
+        yield return new WaitForSeconds(0.25f);
         StartNewTurn();
     }
 }
