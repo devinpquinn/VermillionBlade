@@ -5,7 +5,6 @@ using TMPro;
 public class GameController : MonoBehaviour
 {
     public Animator swordAnim;
-    public TextMeshProUGUI attemptsTextBackground;
-    public TextMeshProUGUI attemptsTextForeground;
+    public ShadowText attemptsText;
     public Image backgroundImage;
 }

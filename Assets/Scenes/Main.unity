@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 467786189}
   - component: {fileID: 467786191}
   - component: {fileID: 467786190}
+  - component: {fileID: 467786192}
   m_Layer: 5
   m_Name: AttemptsTextBackground
   m_TagString: Untagged
@@ -331,6 +332,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467786188}
   m_CullTransparentMesh: 1
+--- !u!114 &467786192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467786188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41f528b9c493dd4fb8c3a4cfe232ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShadowText
+  texts:
+  - {fileID: 467786190}
+  - {fileID: 1962308020}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,8 +877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
   swordAnim: {fileID: 779443697}
-  attemptsTextBackground: {fileID: 467786190}
-  attemptsTextForeground: {fileID: 1962308020}
+  attemptsText: {fileID: 0}
   backgroundImage: {fileID: 466611801}
 --- !u!1 &1268137188
 GameObject:
@@ -1020,8 +1035,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4285760255
-  m_fontColor: {r: 1, g: 0.50980395, b: 0.45098042, a: 1}
+    rgba: 4285152469
+  m_fontColor: {r: 0.8352942, g: 0.23529413, b: 0.4156863, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
