@@ -3047,6 +3047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd45dcecd5f67b04198caba8d0935b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
+  freshStart: 0
   swordAnim: {fileID: 779443697}
   indicator: {fileID: 1268137189}
   directionalSprites:

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 public class GameController : MonoBehaviour
 {
+    public bool freshStart = false;
     public Animator swordAnim;
     private string failAnimName = "SwordStone_Pull";
     private string successAnimName = "SwordStone_Victory";
@@ -24,6 +25,16 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        if (freshStart)
+        {
+            PlayerPrefs.DeleteAll();
+        }
+        else if (PlayerPrefs.HasKey("Attempts"))
+        {
+            attempts = PlayerPrefs.GetInt("Attempts");
+        }
+        attemptsText.SetText($"Attempts: {attempts}");
+
         StartNewTurn();
     }
 
@@ -46,7 +57,8 @@ public class GameController : MonoBehaviour
     void StartNewTurn()
     {
         int newDirection;
-        do {
+        do
+        {
             newDirection = Random.Range(0, 4);
         } while (newDirection == previousDirection);
         currentDirection = newDirection;
@@ -93,6 +105,7 @@ public class GameController : MonoBehaviour
             attempts++;
             if (attemptsText != null)
                 attemptsText.SetText($"Attempts: {attempts}");
+            PlayerPrefs.SetInt("Attempts", attempts);
             swordAnim.Play(failAnimName);
             StartCoroutine(WaitForFailAnim());
         }
