@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     public Animator swordAnim;
     private string failAnimName = "SwordStone_Pull";
     private string successAnimName = "SwordStone_Victory";
+    private string idleAnimName = "SwordStone_Bob";
 
     public SpriteRenderer indicator;
     public List<Sprite> directionalSprites; // 0: up, 1: left, 2: down, 3: right
@@ -32,10 +33,26 @@ public class GameController : MonoBehaviour
         {
             PlayerPrefs.DeleteAll();
         }
-        else if (PlayerPrefs.HasKey("Attempts"))
+        else
         {
-            attempts = PlayerPrefs.GetInt("Attempts");
+            if (PlayerPrefs.HasKey("Attempts"))
+            {
+                attempts = PlayerPrefs.GetInt("Attempts");
+            }
+            if (PlayerPrefs.HasKey("Victory"))
+            {
+                swordAnim.Play(idleAnimName);
+                attemptsText.gameObject.SetActive(false);
+
+                if (!PlayerPrefs.HasKey("Name"))
+                {
+                    victoryScreen.SetActive(true);
+                }
+
+                return;
+            }
         }
+
         attemptsText.SetText($"Attempts: {attempts}");
 
         StartNewTurn();
@@ -97,17 +114,18 @@ public class GameController : MonoBehaviour
 
     void CheckSuccess()
     {
+        attempts++;
+        attemptsText.SetText($"Attempts: {attempts}");
+
         // 1 in 1,000,000 chance
         if (Random.Range(0, 10) == 0)
         {
             gameEnded = true;
+            PlayerPrefs.SetInt("Victory", 1);
             StartCoroutine(DoSuccess());
         }
         else
         {
-            attempts++;
-            if (attemptsText != null)
-                attemptsText.SetText($"Attempts: {attempts}");
             PlayerPrefs.SetInt("Attempts", attempts);
             swordAnim.Play(failAnimName);
             StartCoroutine(WaitForFailAnim());
@@ -120,12 +138,12 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(0.25f);
         StartNewTurn();
     }
-    
+
     IEnumerator DoSuccess()
     {
         swordAnim.Play(successAnimName);
-        
-        yield return new WaitForSeconds(5f);
+
+        yield return new WaitForSeconds(6f);
 
         victoryScreen.SetActive(true);
     }
