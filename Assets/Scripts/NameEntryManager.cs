@@ -42,10 +42,9 @@ public class NameEntryManager : MonoBehaviour
         // If all three letters entered, print name
         if (currentIndex == 3)
         {
-            string name = new string(enteredLetters);
-            Debug.Log($"Entered Name: {name}");
-            StartCoroutine(WaitAndDisable());
             inputComplete = true;
+            string name = new string(enteredLetters);
+            EnterName(name);
         }
     }
 
@@ -72,6 +71,14 @@ public class NameEntryManager : MonoBehaviour
                 if (bright) name_3.SetBright(); else name_3.SetDull();
                 break;
         }
+    }
+    
+    private void EnterName(string name)
+    {
+        Debug.Log($"Entered Name: {name}");
+        PlayerPrefs.SetString("Name", name);
+        
+        StartCoroutine(WaitAndDisable());
     }
     
     IEnumerator WaitAndDisable()

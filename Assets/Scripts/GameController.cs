@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using System.Collections;
 
 public class GameController : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class GameController : MonoBehaviour
     private int previousDirection = -1;
     private bool inputAllowed = false;
     private bool gameEnded = false;
+
+    public GameObject victoryScreen;
 
     void Start()
     {
@@ -95,10 +98,10 @@ public class GameController : MonoBehaviour
     void CheckSuccess()
     {
         // 1 in 1,000,000 chance
-        if (Random.Range(0, 1000000) == 0)
+        if (Random.Range(0, 10) == 0)
         {
-            swordAnim.Play(successAnimName);
             gameEnded = true;
+            StartCoroutine(DoSuccess());
         }
         else
         {
@@ -116,5 +119,14 @@ public class GameController : MonoBehaviour
         // Wait for fail animation to finish
         yield return new WaitForSeconds(0.25f);
         StartNewTurn();
+    }
+    
+    IEnumerator DoSuccess()
+    {
+        swordAnim.Play(successAnimName);
+        
+        yield return new WaitForSeconds(5f);
+
+        victoryScreen.SetActive(true);
     }
 }
