@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour
 
     private int attempts = 0;
     public ShadowText attemptsText;
+    private CanvasGroup attemptsCanvasGroup;
 
     public Image backgroundImage;
 
@@ -42,7 +43,16 @@ public class GameController : MonoBehaviour
             if (PlayerPrefs.HasKey("Victory"))
             {
                 swordAnim.Play(idleAnimName);
-                attemptsText.gameObject.SetActive(false);
+                // Fade out attemptsText if victory already achieved
+                attemptsCanvasGroup = attemptsText.GetComponent<CanvasGroup>();
+                if (attemptsCanvasGroup != null)
+                {
+                    attemptsCanvasGroup.alpha = 0f;
+                }
+                else
+                {
+                    attemptsText.gameObject.SetActive(false);
+                }
 
                 if (!PlayerPrefs.HasKey("Name"))
                 {
@@ -54,6 +64,7 @@ public class GameController : MonoBehaviour
         }
 
         attemptsText.SetText($"Attempts: {attempts}");
+        attemptsCanvasGroup = attemptsText.GetComponent<CanvasGroup>();
 
         StartNewTurn();
     }
@@ -118,7 +129,7 @@ public class GameController : MonoBehaviour
         attemptsText.SetText($"Attempts: {attempts}");
 
         // 1 in 1,000,000 chance
-        if (Random.Range(0, 10) == 0)
+        if (Random.Range(0, 1000000) == 0)
         {
             gameEnded = true;
             PlayerPrefs.SetInt("Victory", 1);
@@ -143,8 +154,31 @@ public class GameController : MonoBehaviour
     {
         swordAnim.Play(successAnimName);
 
+        // Start fading out attemptsText
+        if (attemptsCanvasGroup != null)
+        {
+            StartCoroutine(FadeCanvasGroupAlpha(attemptsCanvasGroup, 1f, 0f, 1f));
+        }
+        else
+        {
+            attemptsText.gameObject.SetActive(false);
+        }
+
         yield return new WaitForSeconds(6f);
 
         victoryScreen.SetActive(true);
+    }
+
+    IEnumerator FadeCanvasGroupAlpha(CanvasGroup cg, float from, float to, float duration)
+    {
+        float elapsed = 0f;
+        cg.alpha = from;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            cg.alpha = Mathf.Lerp(from, to, elapsed / duration);
+            yield return null;
+        }
+        cg.alpha = to;
     }
 }
