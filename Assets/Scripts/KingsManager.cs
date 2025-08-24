@@ -12,7 +12,22 @@ public class KingsManager : MonoBehaviour
 
     void Start()
     {
-        LoadKingsFromGoogleSheet();
+        RefreshKings();
+    }
+    
+    // Call this to start refreshing kings every 60 seconds
+    public void RefreshKings()
+    {
+        StartCoroutine(PeriodicKingsRefreshCoroutine());
+    }
+
+    private IEnumerator PeriodicKingsRefreshCoroutine()
+    {
+        while (true)
+        {
+            LoadKingsFromGoogleSheet();
+            yield return new WaitForSeconds(60f);
+        }
     }
     
 
@@ -34,18 +49,28 @@ public class KingsManager : MonoBehaviour
                 yield break;
             }
 
-            Debug.Log($"Fetched kings: {www.downloadHandler.text}");
-
-            // Parse JSON response
+            // Manually parse the 'values' array from the JSON response
             var json = www.downloadHandler.text;
-            var sheetData = JsonUtility.FromJson<GoogleSheetResponse>(json);
-            if (sheetData != null && sheetData.values != null)
+            var values = new List<string>();
+            var matches = System.Text.RegularExpressions.Regex.Matches(json, @"\[\s*""(.*?)""\s*\]");
+            foreach (System.Text.RegularExpressions.Match match in matches)
             {
-                for (int i = 0; i < kingTexts.Count && i < sheetData.values.Count; i++)
+                if (match.Groups.Count > 1)
                 {
-                    // Assuming each row is a list of strings, and king name is in the first column
-                    // TODO: Replace with correct method/property for ShadowText
-                    kingTexts[i].SetText(sheetData.values[i][0]);
+                    values.Add(match.Groups[1].Value);
+                }
+            }
+            
+            for (int i = 0; i < kingTexts.Count; i++)
+            {
+                ShadowText thisText = kingTexts[i];
+                thisText.SetText("???");
+                thisText.SetDull();
+
+                if (values.Count > i && values[i].ToString().Length > 0)
+                {
+                    thisText.SetText(values[i].Substring(0, 3).ToUpper());
+                    thisText.SetBright();
                 }
             }
         }
