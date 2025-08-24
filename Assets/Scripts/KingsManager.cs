@@ -8,7 +8,7 @@ public class KingsManager : MonoBehaviour
 
     private string sheetId = "1tsL6ZFkJv1CmdJY4UqX2SYtt_I1tBje2KwVvVbhUqko";
     private string range = "A1:A10";
-    private string apiKey = "AIzaSyBvCu16k9h7uMWE2_tf_vT7kSq-GvgVSEs";
+    private string apiKey = "AIzaSyCL6Ig_YUSy3pe0QNhqsyx7ngQ2ohaLqe0";
 
     void Start()
     {
