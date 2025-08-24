@@ -3579,6 +3579,7 @@ GameObject:
   - component: {fileID: 779443695}
   - component: {fileID: 779443697}
   - component: {fileID: 779443698}
+  - component: {fileID: 779443699}
   m_Layer: 0
   m_Name: SwordStone
   m_TagString: Untagged
@@ -3704,6 +3705,29 @@ MonoBehaviour:
   attemptsText: {fileID: 467786192}
   backgroundImage: {fileID: 466611801}
   victoryScreen: {fileID: 1767892290}
+--- !u!114 &779443699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779443694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875510365ff908b41b13d358a437b6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KingsManager
+  kingTexts:
+  - {fileID: 1738352483}
+  - {fileID: 728375840}
+  - {fileID: 1904771258}
+  - {fileID: 800594980}
+  - {fileID: 369874560}
+  - {fileID: 167637606}
+  - {fileID: 1465610511}
+  - {fileID: 2118573308}
+  - {fileID: 2126994403}
+  - {fileID: 850081491}
 --- !u!1 &800594978
 GameObject:
   m_ObjectHideFlags: 0
