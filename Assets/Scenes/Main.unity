@@ -3054,7 +3054,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c31594b7c07bdc4398c708c0d25e11e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LeaderboardManager
-  backendUrl: https://unity-sheets-backend.vercel.app/api/sheets
 --- !u!1 &579043192
 GameObject:
   m_ObjectHideFlags: 0
@@ -3531,7 +3530,6 @@ GameObject:
   m_Component:
   - component: {fileID: 732819388}
   - component: {fileID: 732819387}
-  - component: {fileID: 732819386}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3539,18 +3537,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &732819386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732819385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
 --- !u!114 &732819387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3593,7 +3579,6 @@ GameObject:
   - component: {fileID: 779443695}
   - component: {fileID: 779443697}
   - component: {fileID: 779443698}
-  - component: {fileID: 779443699}
   m_Layer: 0
   m_Name: SwordStone
   m_TagString: Untagged
@@ -3719,29 +3704,6 @@ MonoBehaviour:
   attemptsText: {fileID: 467786192}
   backgroundImage: {fileID: 466611801}
   victoryScreen: {fileID: 1767892290}
---- !u!114 &779443699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779443694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 875510365ff908b41b13d358a437b6b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KingsManager
-  kingTexts:
-  - {fileID: 1738352483}
-  - {fileID: 728375840}
-  - {fileID: 1904771258}
-  - {fileID: 800594980}
-  - {fileID: 369874560}
-  - {fileID: 167637606}
-  - {fileID: 1465610511}
-  - {fileID: 2118573308}
-  - {fileID: 2126994403}
-  - {fileID: 850081491}
 --- !u!1 &800594978
 GameObject:
   m_ObjectHideFlags: 0

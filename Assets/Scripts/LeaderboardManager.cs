@@ -1,19 +1,14 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
+using System.Text;
+using System;
 
-public class GoogleSheetsAppender : MonoBehaviour
+public class LeaderboardManager : MonoBehaviour
 {
     private string backendUrl = "https://unity-sheets-backend.vercel.app/api/sheets";
 
-    void Start()
-    {
-        AppendToColumnA("Test Value");
-    }
-
-    /// <summary>
-    /// Call this function to add a string to the next open cell in column A
-    /// </summary>
     public void AppendToColumnA(string value)
     {
         StartCoroutine(SendToSheet(value));
@@ -21,13 +16,12 @@ public class GoogleSheetsAppender : MonoBehaviour
 
     private IEnumerator SendToSheet(string value)
     {
-        // Prepare JSON body matching the backend format
         SheetRowData data = new SheetRowData(value);
         string json = JsonUtility.ToJson(data);
 
         using (UnityWebRequest request = new UnityWebRequest(backendUrl, "POST"))
         {
-            byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
+            byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
             request.uploadHandler = new UploadHandlerRaw(bodyRaw);
             request.downloadHandler = new DownloadHandlerBuffer();
             request.SetRequestHeader("Content-Type", "application/json");
@@ -45,15 +39,45 @@ public class GoogleSheetsAppender : MonoBehaviour
         }
     }
 
-    // Helper class to serialize JSON for the backend
-    [System.Serializable]
+    public void ReadFirst10ColumnA(Action<List<string>> onComplete)
+    {
+        StartCoroutine(ReadSheetCoroutine(onComplete));
+    }
+
+    private IEnumerator ReadSheetCoroutine(Action<List<string>> onComplete)
+    {
+        using (UnityWebRequest request = UnityWebRequest.Get(backendUrl))
+        {
+            request.SetRequestHeader("Content-Type", "application/json");
+            yield return request.SendWebRequest();
+
+            if (request.result != UnityWebRequest.Result.Success)
+            {
+                Debug.LogError("Failed to read from sheet: " + request.error);
+                onComplete?.Invoke(new List<string>());
+            }
+            else
+            {
+                string json = request.downloadHandler.text;
+                SheetReadResponse response = JsonUtility.FromJson<SheetReadResponse>(json);
+                onComplete?.Invoke(response.values ?? new List<string>());
+            }
+        }
+    }
+
+    [Serializable]
     private class SheetRowData
     {
         public string[] values;
-
         public SheetRowData(string firstColumn)
         {
             values = new string[] { firstColumn };
         }
+    }
+
+    [Serializable]
+    private class SheetReadResponse
+    {
+        public List<string> values;
     }
 }
