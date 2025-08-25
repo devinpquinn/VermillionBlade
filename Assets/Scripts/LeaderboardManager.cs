@@ -9,6 +9,14 @@ public class LeaderboardManager : MonoBehaviour
 {
     private string backendUrl = "https://unity-sheets-backend.vercel.app/api/sheets";
 
+    public List<ShadowText> leaderboardEntries;
+
+    void Start()
+    {
+        ReadFirst10ColumnA();
+    }
+    
+
     public void AppendToColumnA(string value)
     {
         StartCoroutine(SendToSheet(value));
@@ -39,9 +47,25 @@ public class LeaderboardManager : MonoBehaviour
         }
     }
 
-    public void ReadFirst10ColumnA(Action<List<string>> onComplete)
+    public void ReadFirst10ColumnA(Action<List<string>> onComplete = null)
     {
-        StartCoroutine(ReadSheetCoroutine(onComplete));
+        StartCoroutine(ReadSheetCoroutine((values) => {
+            // Set leaderboardEntries text
+            for (int i = 0; i < leaderboardEntries.Count; i++)
+            {
+                ShadowText thisText = leaderboardEntries[i];
+                thisText.SetText("???");
+                thisText.SetDull();
+
+                if (i < values.Count && values[i] != null)
+                {
+                    thisText.SetText(values[i]);
+                    thisText.SetBright();
+                }
+            }
+            // If callback provided, call it
+            onComplete?.Invoke(values);
+        }));
     }
 
     private IEnumerator ReadSheetCoroutine(Action<List<string>> onComplete)
