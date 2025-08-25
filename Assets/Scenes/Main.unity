@@ -3704,7 +3704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd45dcecd5f67b04198caba8d0935b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
-  freshStart: 0
+  freshStart: 1
   swordAnim: {fileID: 779443697}
   indicator: {fileID: 1268137189}
   directionalSprites:
@@ -7671,6 +7671,7 @@ MonoBehaviour:
   name_1: {fileID: 1850985643}
   name_2: {fileID: 398447539}
   name_3: {fileID: 579043194}
+  leaderboardManager: {fileID: 565556545}
 --- !u!1 &1820256521
 GameObject:
   m_ObjectHideFlags: 0

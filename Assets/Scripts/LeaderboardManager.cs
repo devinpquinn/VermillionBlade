@@ -9,17 +9,37 @@ public class LeaderboardManager : MonoBehaviour
 {
     private string backendUrl = "https://unity-sheets-backend.vercel.app/api/sheets";
 
+
     public List<ShadowText> leaderboardEntries;
+
+    private Coroutine refreshCoroutine;
+    private const float refreshInterval = 60f;
 
     void Start()
     {
         ReadFirst10ColumnA();
+        refreshCoroutine = StartCoroutine(LeaderboardRefreshLoop());
     }
-    
+
 
     public void AppendToColumnA(string value)
     {
-        StartCoroutine(SendToSheet(value));
+        if (refreshCoroutine != null)
+        {
+            StopCoroutine(refreshCoroutine);
+            refreshCoroutine = null;
+        }
+        StartCoroutine(SendToSheetAndRefresh(value));
+
+    }
+
+    private IEnumerator SendToSheetAndRefresh(string value)
+    {
+        yield return StartCoroutine(SendToSheet(value));
+        // Wait a short moment to ensure backend update (optional, can be tuned)
+        yield return new WaitForSeconds(1f);
+        ReadFirst10ColumnA();
+        refreshCoroutine = StartCoroutine(LeaderboardRefreshLoop());
     }
 
     private IEnumerator SendToSheet(string value)
@@ -47,9 +67,19 @@ public class LeaderboardManager : MonoBehaviour
         }
     }
 
+    private IEnumerator LeaderboardRefreshLoop()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(refreshInterval);
+            ReadFirst10ColumnA();
+        }
+    }
+
     public void ReadFirst10ColumnA(Action<List<string>> onComplete = null)
     {
-        StartCoroutine(ReadSheetCoroutine((values) => {
+        StartCoroutine(ReadSheetCoroutine((values) =>
+        {
             // Set leaderboardEntries text
             for (int i = 0; i < leaderboardEntries.Count; i++)
             {

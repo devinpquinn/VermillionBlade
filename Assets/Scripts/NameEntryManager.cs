@@ -11,6 +11,8 @@ public class NameEntryManager : MonoBehaviour
     private int currentIndex = 0;
     private bool inputComplete = false;
 
+    public LeaderboardManager leaderboardManager;
+
     void Update()
     {
         if (inputComplete) return;
@@ -77,7 +79,9 @@ public class NameEntryManager : MonoBehaviour
     {
         Debug.Log($"Entered Name: {name}");
         PlayerPrefs.SetString("Name", name);
-        
+
+        leaderboardManager.AppendToColumnA(name);
+
         StartCoroutine(WaitAndDisable());
     }
     
