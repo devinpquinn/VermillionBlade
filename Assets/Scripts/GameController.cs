@@ -139,6 +139,7 @@ public class GameController : MonoBehaviour
         {
             PlayerPrefs.SetInt("Attempts", attempts);
             swordAnim.Play(failAnimName);
+            SoundController.PlayOneShot("Pull");
             StartCoroutine(WaitForFailAnim());
         }
     }
