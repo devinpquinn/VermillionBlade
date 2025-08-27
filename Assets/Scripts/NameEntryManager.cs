@@ -28,6 +28,7 @@ public class NameEntryManager : MonoBehaviour
                     enteredLetters[currentIndex] = letter;
                     SetNameText(currentIndex, letter.ToString().ToUpper(), true);
                     currentIndex++;
+                    SoundController.PlayOneShot("Button");
                     break;
                 }
             }
@@ -39,6 +40,7 @@ public class NameEntryManager : MonoBehaviour
             currentIndex--;
             enteredLetters[currentIndex] = '\0';
             SetNameText(currentIndex, "?", false);
+            SoundController.PlayOneShot("Backspace");
         }
 
         // If all three letters entered, print name

@@ -169,6 +169,7 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(6f);
 
         victoryScreen.SetActive(true);
+        SoundController.PlayOneShot("Victory");
     }
 
     IEnumerator FadeCanvasGroupAlpha(CanvasGroup cg, float from, float to, float duration)
