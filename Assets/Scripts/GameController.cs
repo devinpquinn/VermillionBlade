@@ -129,10 +129,11 @@ public class GameController : MonoBehaviour
         attemptsText.SetText($"Attempts: {attempts}");
 
         // 1 in 1,000,000 chance
-        if (Random.Range(0, 10) == 0)
+        if (Random.Range(0, 1) == 0)
         {
             gameEnded = true;
             PlayerPrefs.SetInt("Victory", 1);
+            SoundController.PlayOneShot("Select", 1, 1);
             StartCoroutine(DoSuccess());
         }
         else
@@ -144,7 +145,7 @@ public class GameController : MonoBehaviour
         }
     }
 
-    System.Collections.IEnumerator WaitForFailAnim()
+    IEnumerator WaitForFailAnim()
     {
         // Wait for fail animation to finish
         yield return new WaitForSeconds(0.25f);
