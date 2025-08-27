@@ -3634,6 +3634,7 @@ GameObject:
   - component: {fileID: 779443695}
   - component: {fileID: 779443697}
   - component: {fileID: 779443698}
+  - component: {fileID: 779443699}
   m_Layer: 0
   m_Name: SwordStone
   m_TagString: Untagged
@@ -3748,7 +3749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd45dcecd5f67b04198caba8d0935b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
-  freshStart: 0
+  freshStart: 1
   swordAnim: {fileID: 779443697}
   indicator: {fileID: 1268137189}
   directionalSprites:
@@ -3759,6 +3760,18 @@ MonoBehaviour:
   attemptsText: {fileID: 467786192}
   backgroundImage: {fileID: 466611801}
   victoryScreen: {fileID: 1767892290}
+--- !u!114 &779443699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779443694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7871997f17a584fb2071c688fcd32a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundTrigger
 --- !u!1 &800594978
 GameObject:
   m_ObjectHideFlags: 0
