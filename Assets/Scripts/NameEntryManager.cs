@@ -89,7 +89,7 @@ public class NameEntryManager : MonoBehaviour
     
     IEnumerator WaitAndDisable()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.75f);
         gameObject.SetActive(false);
     }
 }
