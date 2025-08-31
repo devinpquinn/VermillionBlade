@@ -28,6 +28,11 @@ public class GameController : MonoBehaviour
 
     public GameObject victoryScreen;
 
+    // Touch input variables
+    private Vector2 touchStartPos;
+    private Vector2 touchEndPos;
+    private bool touchActive = false;
+
     void Start()
     {
         if (freshStart)
@@ -73,7 +78,7 @@ public class GameController : MonoBehaviour
     {
         if (!inputAllowed || gameEnded) return;
 
-        // Only accept input if no other direction keys are held
+        // Keyboard input
         if (IsSingleDirectionKeyPressed(out int pressedDir))
         {
             if (pressedDir == currentDirection)
@@ -81,6 +86,34 @@ public class GameController : MonoBehaviour
                 inputAllowed = false;
                 indicator.sprite = null;
                 CheckSuccess();
+            }
+        }
+
+        // Touch input (swipe detection)
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            switch (touch.phase)
+            {
+                case TouchPhase.Began:
+                    touchStartPos = touch.position;
+                    touchActive = true;
+                    break;
+                case TouchPhase.Ended:
+                case TouchPhase.Canceled:
+                    if (touchActive)
+                    {
+                        touchEndPos = touch.position;
+                        int swipeDir = GetSwipeDirection(touchStartPos, touchEndPos);
+                        if (swipeDir == currentDirection && swipeDir != -1)
+                        {
+                            inputAllowed = false;
+                            indicator.sprite = null;
+                            CheckSuccess();
+                        }
+                        touchActive = false;
+                    }
+                    break;
             }
         }
     }
@@ -121,6 +154,29 @@ public class GameController : MonoBehaviour
             }
         }
         return count == 1;
+    }
+
+    // Returns 0: up, 1: left, 2: down, 3: right, or -1 if not a valid swipe
+    int GetSwipeDirection(Vector2 start, Vector2 end)
+    {
+        Vector2 delta = end - start;
+        if (delta.magnitude < 50f) // Minimum swipe distance (pixels)
+            return -1;
+
+        float angle = Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg;
+        // Up
+        if (angle > 45f && angle < 135f)
+            return 0;
+        // Down
+        if (angle < -45f && angle > -135f)
+            return 2;
+        // Right
+        if ((angle >= -45f && angle <= 45f))
+            return 3;
+        // Left
+        if ((angle >= 135f || angle <= -135f))
+            return 1;
+        return -1;
     }
 
     void CheckSuccess()
